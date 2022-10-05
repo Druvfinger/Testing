@@ -2,9 +2,14 @@ package AssignmentOOP;
 
 public class Carnivorousplant extends Plant {
 
+    protected WaterType waterType = WaterType.PROTEINDRINK; // Inkapsling
 
-    Carnivorousplant(String name, double height, String waterType) {
-        super(name, height, waterType);
+    public WaterType getWaterType() {
+        return waterType;
+    }
+
+    Carnivorousplant(String name, double height) {
+        super(name, height);
     }
 
     @Override
@@ -15,6 +20,6 @@ public class Carnivorousplant extends Plant {
 
     @Override
     public void printMe() {
-        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " +  getWaterType() + " per day");
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " +  getWaterType().waterType + " per day");
     }
 }

@@ -2,9 +2,14 @@ package AssignmentOOP;
 
 public class Cactus extends Plant { //arv
 
+    protected WaterType waterType = WaterType.MINERALWATER;  //Inkapsling
 
-    Cactus(String name, double height, String waterType) {
-        super(name, height,waterType);
+    public WaterType getWaterType() {
+        return waterType;
+    }
+
+    Cactus(String name, double height) {
+        super(name, height);
     }
 
     @Override
@@ -16,6 +21,6 @@ public class Cactus extends Plant { //arv
 
     @Override
     public void printMe() {
-        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " +  getWaterType() + " per day");
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().waterType  + " per day");
     }
 }

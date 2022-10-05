@@ -8,10 +8,10 @@ public class Mainprog {
         info.printMe();
     }
     public Mainprog(){
-        Plant Igge = new Cactus("Igge" , 0.2,"Mineral Water");
-        Plant Laura = new Palmtree("Laura", 5, "Tap water");
-        Plant Meatloaf = new Carnivorousplant("Meatloaf",0.7, "Protein drink");
-        Plant Putte = new Palmtree("Putte", 1, "Tap water");
+        Plant Igge = new Cactus("Igge" , 0.2);
+        Plant Laura = new Palmtree("Laura", 5);
+        Plant Meatloaf = new Carnivorousplant("Meatloaf",0.7);
+        Plant Putte = new Palmtree("Putte", 1);
         String answer = JOptionPane.showInputDialog("Which plant is to be watered?");
         answer = answer.toLowerCase();
         switch (answer) {

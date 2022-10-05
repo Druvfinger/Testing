@@ -4,12 +4,9 @@ abstract class Plant implements Printable { //implements interface on all it's s
     private final String name; //Inkapsling
     private final double height;
 
-    String waterType;
-
-    Plant(String name, double height, String waterType){
+    Plant(String name, double height){
         this.name = name;
         this.height = height;
-        this.waterType = waterType;
     }
 
     public String getName() {
@@ -18,10 +15,6 @@ abstract class Plant implements Printable { //implements interface on all it's s
 
     public double getHeight() {
         return height;
-    }
-
-    public String getWaterType() {
-        return waterType;
     }
 
     abstract double calculateWaterNeed();

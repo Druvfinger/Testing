@@ -2,8 +2,14 @@ package AssignmentOOP;
 
 public class Palmtree extends Plant {
 
-    Palmtree(String name, double height, String waterType) {
-        super(name, height, waterType);
+    protected WaterType waterType = WaterType.TAPWATER; // Inkapsling
+
+    public WaterType getWaterType() {
+        return waterType;
+    }
+
+    Palmtree(String name, double height) {
+        super(name, height);
     }
 
     @Override
@@ -13,6 +19,6 @@ public class Palmtree extends Plant {
 
     @Override
     public void printMe() {
-        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " +  getWaterType() + " per day");
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().waterType + " per day");
     }
 }
