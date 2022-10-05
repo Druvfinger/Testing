@@ -21,6 +21,6 @@ public class Cactus extends Plant { //arv
 
     @Override
     public void printMe() {
-        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().waterType  + " per day");
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().makePretty  + " per day");
     }
 }

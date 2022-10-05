@@ -19,6 +19,6 @@ public class Palmtree extends Plant {
 
     @Override
     public void printMe() {
-        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().waterType + " per day");
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + getWaterType().makePretty + " per day");
     }
 }

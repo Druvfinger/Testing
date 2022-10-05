@@ -5,9 +5,9 @@ public enum WaterType {
     TAPWATER ("Tap Water"),
     PROTEINDRINK ("Protein Drink");
 
-    public final String waterType;
+    public final String makePretty;
 
     WaterType(String s) {
-        waterType = s;
+        makePretty = s;
     }
 }
