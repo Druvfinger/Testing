@@ -4,6 +4,8 @@ abstract class Plant implements Printable { //implements interface on all it's s
     private final String name; //Inkapsling
     private final double height;
 
+    protected WaterType waterType;
+
     Plant(String name, double height){
         this.name = name;
         this.height = height;
@@ -21,6 +23,6 @@ abstract class Plant implements Printable { //implements interface on all it's s
 
     @Override
     public void printMe() {
-
+        System.out.println(getName() + " needs "+ calculateWaterNeed() + "L " + waterType.makePretty + " per day");
     }
 }
